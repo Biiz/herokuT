@@ -10,7 +10,7 @@ app.use('/', function(request, response)
 
     
 	response.redirect('/index.html');
-  
+  	response.end();
   	
 });
 
