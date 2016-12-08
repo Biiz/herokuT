@@ -8,11 +8,13 @@ app.set('port', (process.env.PORT || 5000));
 app.get('/', function(request, response) 
 {
 	
-	data= fs.readFile('/index.html',   function (err, data) {
-    //Other information required...
-    res.setHeader('Content-Type', 'text/html');
-    res.send(data);
-  	
+	data= fs.readFile('/index.html',
+		function (err, data) {
+    		//Other information required...
+    		res.setHeader('Content-Type', 'text/html');
+    		res.send(data);
+		}
+	);
 });
 
 
