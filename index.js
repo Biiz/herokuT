@@ -7,10 +7,10 @@ app.set('port', (process.env.PORT || 5000));
 
 app.use('/', function(request, response) 
 {
-	var text = 'Hello world';
+
     
-	response.writeHead(200, {'Content-Type': 'text/html'});
-    response.end(text);
+	response.redirect('/index.html');
+  
   	
 });
 
