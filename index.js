@@ -5,7 +5,7 @@ var app = express();
 
 app.set('port', (process.env.PORT || 5000));
 
-app.use(express.static(__dirname + '/', { redirect : false }));
+app.use(express.static(__dirname + '/html', { redirect : false }));
 
 
 app.listen(app.get('port'), function() {
